@@ -6,7 +6,7 @@
     <title>Sunnah Bank</title>
     <link rel="stylesheet" href="css/bootstrapcss/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/style.css">
-    <script src="js/custom/custom.js"></script>
+    
 </head>
 <body>
     <head>
@@ -16,14 +16,56 @@
     </head>
     <main>
         <div id="login-area">
-            <h2 class="text-center">Welcome To Sunnah Bank</h1>
+            <h1 class="text-center">Welcome To Sunnah Bank</h1>
             <div class="submit-area">
                 <h4>Login</h4>
-                <input class="form-control" type="text" name="" id="" placeholder="Email"><br>
-                <input class="form-control" type="password" name="" id="" placeholder="Password"><br>
+                <input class="form-control" type="text" name="" id="email" placeholder="Email"><br>
+                <input class="form-control" type="password" name="" id="password" placeholder="Password"><br>
                 <button id="login" class="btn btn-success">Enter</button>
             </div>
         </div>
+        <div id="transaction-area">
+            <h1 class="text-center">Transaction</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="current-deposit">00</span></h2>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="current-withdraw">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                    <h2>$ <span id="current-balance"> 1240</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Deposit</h4>
+                        <input id="deposit-amount" type="text" class="form-control" placeholder="$ amount you want to deposit"><br>
+                        <button id="add-deposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Withdraw</h4>
+                        <input id="withdraw-amount" type="text" class="form-control" placeholder="$ amount you want to withdraw"><br>
+                        <button id="add-withdraw" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="js/custom/custom.js"></script>
 </body>
 </html>
